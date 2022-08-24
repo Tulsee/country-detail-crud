@@ -1,0 +1,20 @@
+[
+  {
+    "country_name": "Nepal",
+    "population": 10000,
+    "capital": 20000,
+    "literacy_rate": "52%"
+  },
+  {
+    "country_name": "India",
+    "population": 20000,
+    "capital": 700000,
+    "literacy_rate": "49%"
+  },
+  {
+    "country_name": "China",
+    "population": 10000000,
+    "capital": 20000000,
+    "literacy_rate": "72%"
+  }
+]
