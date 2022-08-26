@@ -1,10 +1,20 @@
-import ListView from './components/ListView';
+import React, { useState } from 'react';
+import Countries from './components/Countries';
+import Header from './components/Header';
+import AddCountry from './components/AddCountry';
+import { CountryProvider } from './components/context/CountryContext';
 
 function App() {
+  const [addButton, setAddButton] = useState(false);
+
   return (
-    <div className='App'>
-      <ListView />
-    </div>
+    <CountryProvider>
+      <div className='container'>
+        <Header onAdd={() => setAddButton(!addButton)} />
+        {addButton && <AddCountry />}
+        <Countries />
+      </div>
+    </CountryProvider>
   );
 }
 
